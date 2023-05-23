@@ -6,7 +6,7 @@ local setting = {
 	bg = colors.serika0_gui,
 	buffer_bg = colors.serika0_gui,
 	buffer_bg_selected = colors.serika4_gui,
-	buffer_bg_visible = colors.serika4_gui,
+	buffer_bg_visible = colors.serika0_gui,
 	bold = true,
 	italic = true,
 }
