@@ -86,7 +86,7 @@ theme.loadEditor = function()
 		Folded = { fg = serika.serika3_gui_bright, bg = serika.none, style = italic },
 		FoldColumn = { fg = serika.serika7_gui },
 		IncSearch = { fg = serika.serika0_gui, bg = serika.serika4_gui },
-		LineNr = { fg = serika.serika10_gui },
+		LineNr = { fg = serika.serika10_gui, style = bold },
 		CursorLineNr = { fg = serika.serika0_gui, bg = serika.serika10_gui },
 		MatchParen = { fg = serika.serika15_gui, bg = serika.none, style = bold },
 		ModeMsg = { fg = serika.serika4_gui },
