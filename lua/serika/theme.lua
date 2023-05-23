@@ -498,8 +498,8 @@ theme.loadPlugins = function()
 		-- NvimTree
 		NvimTreeRootFolder = { fg = serika.serika15_gui },
 		NvimTreeSymlink = { fg = serika.serika5_gui },
-		NvimTreeFolderName = { fg = serika.serika4_gui },
-		NvimTreeFolderIcon = { fg = serika.serika9_gui },
+		NvimTreeFolderName = { fg = serika.serika4_gui , style = bold},
+		NvimTreeFolderIcon = { fg = serika.serika4_gui },
 		NvimTreeEmptyFolderName = { fg = serika.serika4_gui },
 		NvimTreeOpenedFolderName = { fg = serika.serika5_gui },
 		NvimTreeExecFile = { fg = serika.serika4_gui },
