@@ -351,7 +351,7 @@ theme.loadTreeSitter = function()
 	treesitter.TSStringEscape = { fg = serika.serika4_gui, style = bold } -- For escape characters within a string.
 	treesitter.TSCharacter = { fg = serika.serika4_gui, style = italic } -- For characters.
 
-	treesitter["@comment"] = { fg = serika.serika3_gui_bright, style = "bold.italic" }
+	treesitter["@comment"] = { fg = serika.serika3_gui_bright, style = "bold,italic" }
 	treesitter["@conditional"] = { fg = serika.serika10_gui, style = bold }
 	treesitter["@function"] = { fg = serika.serika10_gui, style = bold }
 	treesitter["@method"] = { fg = serika.serika10_gui, style = bold }
