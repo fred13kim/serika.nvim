@@ -344,12 +344,12 @@ theme.loadTreeSitter = function()
 	treesitter.TSKeywordFunction = { fg = serika.serika8_gui, style = italic }
 	treesitter.TSKeywordReturn = { fg = serika.serika8_gui, style = italic }
 	treesitter.TSKeywordOperator = { fg = serika.serika8_gui, style = italic }
-	treesitter.TSRepeat = { fg = serika.serika9_gui, style = italic } -- For keywords related to loops.
+	treesitter.TSRepeat = { fg = serika.serika4_gui, style = bold } -- For keywords related to loops.
 	-- Strings
-	treesitter.TSString = { fg = serika.serika14_gui, style = italic } -- For strings.
-	treesitter.TSStringRegex = { fg = serika.serika7_gui, style = italic } -- For regexes.
-	treesitter.TSStringEscape = { fg = serika.serika15_gui, style = italic } -- For escape characters within a string.
-	treesitter.TSCharacter = { fg = serika.serika14_gui, style = italic } -- For characters.
+	treesitter.TSString = { fg = serika.serika4_gui, style = bold } -- For strings.
+	treesitter.TSStringRegex = { fg = serika.serika4_gui, style = bold } -- For regexes.
+	treesitter.TSStringEscape = { fg = serika.serika4_gui, style = bold } -- For escape characters within a string.
+	treesitter.TSCharacter = { fg = serika.serika4_gui, style = italic } -- For characters.
 
 	treesitter["@comment"] = { fg = serika.serika3_gui_bright, style = italic }
 	treesitter["@conditional"] = { fg = serika.serika9_gui, style = italic }
@@ -364,10 +364,10 @@ theme.loadTreeSitter = function()
 	treesitter["@keyword.return"] = { fg = serika.serika8_gui, style = italic }
 	treesitter["@keyword.operator"] = { fg = serika.serika8_gui, style = italic }
 	treesitter["@repeat"] = { fg = serika.serika9_gui, style = italic }
-	treesitter["@string"] = { fg = serika.serika14_gui, style = italic }
-	treesitter["@string.regex"] = { fg = serika.serika7_gui, style = italic }
-	treesitter["@string.escape"] = { fg = serika.serika15_gui, style = italic }
-	treesitter["@character"] = { fg = serika.serika14_gui, style = italic }
+	treesitter["@string"] = { fg = serika.serika4_gui, style = bold }
+	treesitter["@string.regex"] = { fg = serika.serika4_gui, style = bold }
+	treesitter["@string.escape"] = { fg = serika.serika4_gui, style = bold }
+	treesitter["@character"] = { fg = serika.serika4_gui, style = bold }
 
 	return treesitter
 end
