@@ -254,8 +254,8 @@ theme.loadTreeSitter = function()
 		TSInclude = { fg = serika.serika9_gui }, -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
 		TSLabel = { fg = serika.serika15_gui }, -- For labels: `label:` in C and `:label:` in Lua.
 		TSOperator = { fg = serika.serika9_gui }, -- For any operator: `+`, but also `->` and `*` in C.
-		TSParameter = { fg = serika.serika10_gui }, -- For parameters of a function.
-		TSParameterReference = { fg = serika.serika10_gui }, -- For references to parameters of a function.
+		TSParameter = { fg = serika.serika4_gui }, -- For parameters of a function.
+		TSParameterReference = { fg = serika.serika4_gui }, -- For references to parameters of a function.
 		TSPunctDelimiter = { fg = serika.serika8_gui }, -- For delimiters ie: `.`
 		TSPunctBracket = { fg = serika.serika8_gui }, -- For brackets and parens.
 		TSPunctSpecial = { fg = serika.serika8_gui }, -- For special punctutation that does not fall in the catagories before.
@@ -317,11 +317,11 @@ theme.loadTreeSitter = function()
 	treesitter.TSBoolean = { fg = serika.serika9_gui, style = bold }
 	treesitter.TSConstBuiltin = { fg = serika.serika7_gui, style = bold }
 	treesitter.TSConstMacro = { fg = serika.serika7_gui, style = bold }
-	treesitter.TSVariable = { fg = serika.serika4_gui, style = bold }
+	treesitter.TSVariable = { fg = serika.serika10_gui, style = bold }
 	treesitter.TSTitle = { fg = serika.serika10_gui, bg = serika.none, style = bold }
-	treesitter["@variable"] = { fg = serika.serika4_gui, style = bold }
-	treesitter["@variable.builtin"] = { fg = serika.serika4_gui, style = bold }
-	treesitter["@variable.global"] = { fg = serika.serika4_gui, style = bold }
+	treesitter["@variable"] = { fg = serika.serika10_gui, style = bold }
+	treesitter["@variable.builtin"] = { fg = serika.serika10_gui, style = bold }
+	treesitter["@variable.global"] = { fg = serika.serika10_gui, style = bold }
 	treesitter["@boolean"] = { fg = serika.serika9_gui, style = bold }
 	treesitter["@constant.builtin"] = { fg = serika.serika7_gui, style = bold }
 	treesitter["@constant.macro"] = { fg = serika.serika7_gui, style = bold }
