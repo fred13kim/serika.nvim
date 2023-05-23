@@ -1,10 +1,10 @@
 local colors = require("serika.colors")
 
 local setting = {
-	fill = colors.serika4_gui,
+	fill = colors.serika0_gui,
 	indicator = colors.serika9_gui,
-	bg = colors.serika4_gui,
-	buffer_bg = colors.serika4_gui,
+	bg = colors.serika0_gui,
+	buffer_bg = colors.serika0_gui,
 	buffer_bg_selected = colors.serika4_gui,
 	buffer_bg_visible = colors.serika4_gui,
 	bold = true,
