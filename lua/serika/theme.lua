@@ -498,16 +498,16 @@ theme.loadPlugins = function()
 		-- NvimTree
 		NvimTreeRootFolder = { fg = serika.serika15_gui },
 		NvimTreeSymlink = { fg = serika.serika5_gui },
-		NvimTreeFolderName = { fg = serika.serika4_gui , style = bold},
+		NvimTreeFolderName = { fg = serika.serika4_gui },
 		NvimTreeFolderIcon = { fg = serika.serika4_gui },
 		NvimTreeEmptyFolderName = { fg = serika.serika4_gui },
-		NvimTreeOpenedFolderName = { fg = serika.serika5_gui },
+		NvimTreeOpenedFolderName = { fg = serika.serika4_gui },
 		NvimTreeExecFile = { fg = serika.serika4_gui },
-		NvimTreeOpenedFile = { fg = serika.serika6_gui },
+		NvimTreeOpenedFile = { fg = serika.serika4_gui },
 		NvimTreeSpecialFile = { fg = serika.serika4_gui, style = bold},
 		NvimTreeImageFile = { fg = serika.serika4_gui },
 		NvimTreeMarkdownFile = { fg = serika.serika4_gui },
-		NvimTreeIndentMarker = { fg = serika.serika9_gui },
+		NvimTreeIndentMarker = { fg = serika.serika4_gui },
 		NvimTreeGitDirty = { fg = serika.serika13_gui }, -- diff mode: Changed line |diff.txt|
 		NvimTreeGitStaged = { fg = serika.serika13_gui }, -- diff mode: Changed line |diff.txt|
 		NvimTreeGitMerge = { fg = serika.serika13_gui }, -- diff mode: Changed line |diff.txt|
