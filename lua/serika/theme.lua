@@ -254,11 +254,11 @@ theme.loadTreeSitter = function()
 		TSInclude = { fg = serika.serika9_gui }, -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
 		TSLabel = { fg = serika.serika15_gui }, -- For labels: `label:` in C and `:label:` in Lua.
 		TSOperator = { fg = serika.serika9_gui }, -- For any operator: `+`, but also `->` and `*` in C.
-		TSParameter = { fg = serika.serika4_gui }, -- For parameters of a function.
-		TSParameterReference = { fg = serika.serika4_gui }, -- For references to parameters of a function.
-		TSPunctDelimiter = { fg = serika.serika8_gui }, -- For delimiters ie: `.`
-		TSPunctBracket = { fg = serika.serika8_gui }, -- For brackets and parens.
-		TSPunctSpecial = { fg = serika.serika8_gui }, -- For special punctutation that does not fall in the catagories before.
+		TSParameter = { fg = serika.serika10_gui }, -- For parameters of a function.
+		TSParameterReference = { fg = serika.serika10_gui }, -- For references to parameters of a function.
+		TSPunctDelimiter = { fg = serika.serika4_gui }, -- For delimiters ie: `.`
+		TSPunctBracket = { fg = serika.serika4_gui }, -- For brackets and parens.
+		TSPunctSpecial = { fg = serika.serika4_gui }, -- For special punctutation that does not fall in the catagories before.
 		TSSymbol = { fg = serika.serika15_gui }, -- For identifiers referring to symbols or atoms.
 		TSType = { fg = serika.serika9_gui }, -- For types.
 		TSTypeBuiltin = { fg = serika.serika9_gui }, -- For builtin types.
@@ -282,7 +282,7 @@ theme.loadTreeSitter = function()
 		["@include"] = { fg = serika.serika9_gui },
 		["@label"] = { fg = serika.serika15_gui },
 		["@operator"] = { fg = serika.serika4_gui },
-		["@parameter"] = { fg = serika.serika4_gui },
+		["@parameter"] = { fg = serika.serika10_gui },
 		["@punctuation.delimiter"] = { fg = serika.serika4_gui },
 		["@punctuation.bracket"] = { fg = serika.serika4_gui },
 		["@punctuation.special"] = { fg = serika.serika4_gui },
@@ -336,8 +336,8 @@ theme.loadTreeSitter = function()
 	treesitter.TSMethod = { fg = serika.serika7_gui, style = italic } -- For method calls and definitions.
 	treesitter.TSFuncBuiltin = { fg = serika.serika8_gui, style = italic }
 	-- Namespaces and property accessors
-	treesitter.TSNamespace = { fg = serika.serika4_gui, style = bold } -- For identifiers referring to modules and namespaces.
-	treesitter.TSField = { fg = serika.serika4_gui, style = bold } -- For fields.
+	treesitter.TSNamespace = { fg = serika.serika10_gui, style = bold } -- For identifiers referring to modules and namespaces.
+	treesitter.TSField = { fg = serika.serika10_gui, style = bold } -- For fields.
 	treesitter.TSProperty = { fg = serika.serika10_gui, style = italic } -- Same as `TSField`, but when accessing, not declaring.
 	-- Language keywords
 	treesitter.TSKeyword = { fg = serika.serika9_gui, style = italic } -- For keywords that don't fall in other categories.
