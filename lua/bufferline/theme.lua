@@ -6,6 +6,7 @@ local setting = {
 	bg = colors.serika0_gui,
 	buffer_bg = colors.serika0_gui,
 	buffer_bg_selected = colors.serika4_gui,
+    buffer_fg_selected = colors.serika0_gui,
 	buffer_bg_visible = colors.serika0_gui,
 	bold = true,
 	italic = true,
@@ -24,6 +25,7 @@ M.highlights = function(new_setting)
 	local bg = setting.bg
 	local buffer_bg = setting.bg
 	local buffer_bg_selected = setting.buffer_bg_selected
+    local buffer_fg_selected = setting.buffer_fg_selected
 	local buffer_bg_visible = setting.buffer_bg_visible
 	local bold = setting.bold
 	local italic = setting.italic
@@ -38,6 +40,7 @@ M.highlights = function(new_setting)
 
 		buffer_selected = {
 			bg = buffer_bg_selected,
+            fg = buffer_fg_selected,
 			italic = italic,
 		},
 		buffer_visible = {
@@ -50,6 +53,7 @@ M.highlights = function(new_setting)
 		},
 		numbers_selected = {
 			bg = buffer_bg_selected,
+            fg = buffer_fg_selected,
 		},
 		numbers_visible = {
 			bg = buffer_bg_visible,
@@ -61,6 +65,7 @@ M.highlights = function(new_setting)
 		},
 		diagnostic_selected = {
 			bg = buffer_bg_selected,
+            fg = buffer_fg_selected,
 			bold = bold,
 			italic = italic,
 		},
@@ -76,6 +81,7 @@ M.highlights = function(new_setting)
 		},
 		hint_selected = {
 			bg = buffer_bg_selected,
+            fg = buffer_fg_selected,
 			bold = bold,
 			italic = italic,
 		},
@@ -87,6 +93,7 @@ M.highlights = function(new_setting)
 		},
 		hint_diagnostic_selected = {
 			bg = buffer_bg_selected,
+            fg = buffer_fg_selected,
 			bold = bold,
 			italic = italic,
 		},
@@ -99,6 +106,7 @@ M.highlights = function(new_setting)
 		},
 		info_selected = {
 			bg = buffer_bg_selected,
+            fg = buffer_fg_selected,
 			bold = bold,
 			italic = italic,
 		},
@@ -110,6 +118,7 @@ M.highlights = function(new_setting)
 		},
 		info_diagnostic_selected = {
 			bg = buffer_bg_selected,
+            fg = buffer_fg_selected,
 			bold = bold,
 			italic = italic,
 		},
@@ -122,6 +131,7 @@ M.highlights = function(new_setting)
 		},
 		warning_selected = {
 			bg = buffer_bg_selected,
+            fg = buffer_fg_selected,
 			bold = bold,
 			italic = italic,
 		},
@@ -133,6 +143,7 @@ M.highlights = function(new_setting)
 		},
 		warning_diagnostic_selected = {
 			bg = buffer_bg_selected,
+            fg = buffer_fg_selected,
 			bold = bold,
 			italic = italic,
 		},
@@ -144,6 +155,7 @@ M.highlights = function(new_setting)
 		},
 		error_selected = {
 			bg = buffer_bg_selected,
+            fg = buffer_fg_selected,
 			bold = bold,
 			italic = italic,
 		},
@@ -155,6 +167,7 @@ M.highlights = function(new_setting)
 		},
 		error_diagnostic_selected = {
 			bg = buffer_bg_selected,
+            fg = buffer_fg_selected,
 			bold = bold,
 			italic = italic,
 		},
@@ -167,6 +180,7 @@ M.highlights = function(new_setting)
 		},
 		close_button_selected = {
 			bg = buffer_bg_selected,
+            fg = buffer_fg_selected,
 		},
 
 		duplicate = {
@@ -174,6 +188,7 @@ M.highlights = function(new_setting)
 		},
 		duplicate_selected = {
 			bg = buffer_bg_selected,
+            fg = buffer_fg_selected,
 		},
 		duplicate_visible = {
 			bg = buffer_bg_visible,
@@ -195,6 +210,7 @@ M.highlights = function(new_setting)
 			bg = buffer_bg,
 		},
 		modified_selected = {
+            fg = buffer_fg_selected,
 			bg = buffer_bg_selected,
 		},
 		modified_visible = {
@@ -210,6 +226,7 @@ M.highlights = function(new_setting)
 			italic = italic,
 		},
 		pick_selected = {
+            fg = buffer_fg_selected,
 			bg = buffer_bg_selected,
 			bold = bold,
 			italic = italic,
