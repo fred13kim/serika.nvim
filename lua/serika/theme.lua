@@ -251,7 +251,7 @@ theme.loadTreeSitter = function()
 		TSError = { fg = serika.serika11_gui }, -- For syntax/parser errors.
 		TSException = { fg = serika.serika15_gui }, -- For exception related keywords.
 		TSFuncMacro = { fg = serika.serika7_gui }, -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
-		TSInclude = { fg = serika.serika9_gui }, -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
+		TSInclude = { fg = serika.serika10_gui , style = bold}, -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
 		TSLabel = { fg = serika.serika15_gui }, -- For labels: `label:` in C and `:label:` in Lua.
 		TSOperator = { fg = serika.serika9_gui }, -- For any operator: `+`, but also `->` and `*` in C.
 		TSParameter = { fg = serika.serika10_gui }, -- For parameters of a function.
@@ -271,7 +271,7 @@ theme.loadTreeSitter = function()
 		TSLiteral = { fg = serika.serika4_gui }, -- Literal text.
 		TSURI = { fg = serika.serika14_gui }, -- Any URI like a link or email.
 		TSAnnotation = { fg = serika.serika11_gui }, -- For C++/Dart attributes, annotations that can be attached to the code to denote some kind of meta information.
-		["@constructor"] = { fg = serika.serika9_gui },
+		["@constructor"] = { fg = serika.serika10_gui },
 		["@constant"] = { fg = serika.serika13_gui },
 		["@float"] = { fg = serika.serika4_gui,style = bold },
 		["@number"] = { fg = serika.serika4_gui,style = bold },
@@ -279,7 +279,7 @@ theme.loadTreeSitter = function()
 		["@error"] = { fg = serika.serika11_gui },
 		["@exception"] = { fg = serika.serika15_gui },
 		["@funtion.macro"] = { fg = serika.serika7_gui },
-		["@include"] = { fg = serika.serika9_gui },
+		["@include"] = { fg = serika.serika10_gui , style = bold},
 		["@label"] = { fg = serika.serika15_gui },
 		["@operator"] = { fg = serika.serika4_gui },
 		["@parameter"] = { fg = serika.serika10_gui },
@@ -313,7 +313,7 @@ theme.loadTreeSitter = function()
 		-- @string.special
 	}
 
-	treesitter.TSVariableBuiltin = { fg = serika.serika4_gui, style = bold }
+	treesitter.TSVariableBuiltin = { fg = serika.serika10_gui, style = bold }
 	treesitter.TSBoolean = { fg = serika.serika9_gui, style = bold }
 	treesitter.TSConstBuiltin = { fg = serika.serika7_gui, style = bold }
 	treesitter.TSConstMacro = { fg = serika.serika7_gui, style = bold }
