@@ -336,8 +336,8 @@ theme.loadTreeSitter = function()
 	treesitter.TSMethod = { fg = serika.serika7_gui, style = italic } -- For method calls and definitions.
 	treesitter.TSFuncBuiltin = { fg = serika.serika8_gui, style = italic }
 	-- Namespaces and property accessors
-	treesitter.TSNamespace = { fg = serika.serika4_gui, style = italic } -- For identifiers referring to modules and namespaces.
-	treesitter.TSField = { fg = serika.serika4_gui, style = italic } -- For fields.
+	treesitter.TSNamespace = { fg = serika.serika4_gui, style = bold } -- For identifiers referring to modules and namespaces.
+	treesitter.TSField = { fg = serika.serika4_gui, style = bold } -- For fields.
 	treesitter.TSProperty = { fg = serika.serika10_gui, style = italic } -- Same as `TSField`, but when accessing, not declaring.
 	-- Language keywords
 	treesitter.TSKeyword = { fg = serika.serika9_gui, style = italic } -- For keywords that don't fall in other categories.
@@ -351,18 +351,18 @@ theme.loadTreeSitter = function()
 	treesitter.TSStringEscape = { fg = serika.serika4_gui, style = bold } -- For escape characters within a string.
 	treesitter.TSCharacter = { fg = serika.serika4_gui, style = italic } -- For characters.
 
-	treesitter["@comment"] = { fg = serika.serika3_gui_bright, style = italic }
-	treesitter["@conditional"] = { fg = serika.serika9_gui, style = italic }
-	treesitter["@function"] = { fg = serika.serika8_gui, style = italic }
-	treesitter["@method"] = { fg = serika.serika8_gui, style = italic }
-	treesitter["@function.builtin"] = { fg = serika.serika8_gui, style = italic }
-	treesitter["@namespace"] = { fg = serika.serika4_gui, style = italic }
-	treesitter["@field"] = { fg = serika.serika4_gui, style = italic }
-	treesitter["@property"] = { fg = serika.serika10_gui, style = italic }
-	treesitter["@keyword"] = { fg = serika.serika9_gui, style = italic }
-	treesitter["@keyword.function"] = { fg = serika.serika8_gui, style = italic }
-	treesitter["@keyword.return"] = { fg = serika.serika8_gui, style = italic }
-	treesitter["@keyword.operator"] = { fg = serika.serika8_gui, style = italic }
+	treesitter["@comment"] = { fg = serika.serika3_gui_bright, style = "bold.italic" }
+	treesitter["@conditional"] = { fg = serika.serika10_gui, style = bold }
+	treesitter["@function"] = { fg = serika.serika10_gui, style = bold }
+	treesitter["@method"] = { fg = serika.serika10_gui, style = bold }
+	treesitter["@function.builtin"] = { fg = serika.serika10_gui, style = bold }
+	treesitter["@namespace"] = { fg = serika.serika4_gui, style = bold }
+	treesitter["@field"] = { fg = serika.serika4_gui, style = bold }
+	treesitter["@property"] = { fg = serika.serika10_gui, style = bold }
+	treesitter["@keyword"] = { fg = serika.serika10_gui, style = bold }
+	treesitter["@keyword.function"] = { fg = serika.serika10_gui, style = bold }
+	treesitter["@keyword.return"] = { fg = serika.serika10_gui, style = bold }
+	treesitter["@keyword.operator"] = { fg = serika.serika4_gui, style = bold }
 	treesitter["@repeat"] = { fg = serika.serika9_gui, style = italic }
 	treesitter["@string"] = { fg = serika.serika4_gui, style = bold }
 	treesitter["@string.regex"] = { fg = serika.serika4_gui, style = bold }
