@@ -78,7 +78,7 @@ theme.loadEditor = function()
 		FloatBorder = { fg = serika.serika4_gui, bg = serika.float }, -- normal text and background color
 		ColorColumn = { fg = serika.none, bg = serika.serika1_gui }, -- used for the columns set with 'colorcolumn'
 		Conceal = { fg = serika.serika1_gui }, -- placeholder characters substituted for concealed text (see 'conceallevel')
-		Cursor = { fg = serika.serika4_gui, bg = serika.none, style = "reverse" }, -- the character under the cursor
+		Cursor = { fg = serika.none, bg = serika.none, style = "reverse" }, -- the character under the cursor
 		CursorIM = { fg = serika.serika5_gui, bg = serika.none, style = "reverse" }, -- like Cursor, but used when in IME mode
 		Directory = { fg = serika.serika7_gui, bg = serika.none }, -- directory names (and other special names in listings)
 		EndOfBuffer = { fg = serika.serika1_gui },
