@@ -16,38 +16,39 @@ else
 	bold_italic = "bold,italic"
 end
 
+
 theme.loadSyntax = function()
 	-- Syntax highlight groups
 	return {
-		Type = { fg = serika.serika9_gui }, -- int, long, char, etc.
-		StorageClass = { fg = serika.serika9_gui }, -- static, register, volatile, etc.
-		Structure = { fg = serika.serika9_gui }, -- struct, union, enum, etc.
-		Constant = { fg = serika.serika4_gui }, -- any constant
-		Character = { fg = serika.serika14_gui }, -- any character constant: 'c', '\n'
-		Number = { fg = serika.serika15_gui }, -- a number constant: 5
-		Boolean = { fg = serika.serika9_gui }, -- a boolean constant: TRUE, false
-		Float = { fg = serika.serika15_gui }, -- a floating point constant: 2.3e10
-		Statement = { fg = serika.serika9_gui }, -- any statement
-		Label = { fg = serika.serika9_gui }, -- case, default, etc.
-		Operator = { fg = serika.serika9_gui }, -- sizeof", "+", "*", etc.
-		Exception = { fg = serika.serika9_gui }, -- try, catch, throw
-		PreProc = { fg = serika.serika9_gui }, -- generic Preprocessor
-		Include = { fg = serika.serika9_gui }, -- preprocessor #include
-		Define = { fg = serika.serika9_gui }, -- preprocessor #define
-		Macro = { fg = serika.serika9_gui }, -- same as Define
-		Typedef = { fg = serika.serika9_gui }, -- A typedef
-		PreCondit = { fg = serika.serika13_gui }, -- preprocessor #if, #else, #endif, etc.
-		Special = { fg = serika.serika4_gui }, -- any special symbol
-		SpecialChar = { fg = serika.serika13_gui }, -- special character in a constant
-		Tag = { fg = serika.serika4_gui }, -- you can use CTRL-] on this
-		Delimiter = { fg = serika.serika6_gui }, -- character that needs attention like , or .
-		SpecialComment = { fg = serika.serika8_gui }, -- special things inside a comment
-		Debug = { fg = serika.serika11_gui }, -- debugging statements
-		Underlined = { fg = serika.serika14_gui, bg = serika.none, style = "underline" }, -- text that stands out, HTML links
-		Ignore = { fg = serika.serika1_gui }, -- left blank, hidden
-		Todo = { fg = serika.serika13_gui, bg = serika.none, style = bold_italic }, -- anything that needs extra attention; mostly the keywords TODO FIXME and XXX
-		Conceal = { fg = serika.none, bg = serika.serika0_gui },
-		htmlLink = { fg = serika.serika14_gui, style = "underline" },
+        Type            =  {  fg  =  serika.serika10_gui, style = bold  },  --  int,          long,         char,      etc.
+        StorageClass    =  {  fg  =  serika.serika10_gui, style = bold  },  --  static,       register,     volatile,  etc.
+        Structure       =  {  fg  =  serika.serika10_gui, style = bold  },  --  struct,       union,        enum,      etc.
+        Constant        =  {  fg  =  serika.serika10_gui, style = bold  },  --  any           constant
+        Character       =  {  fg  =  serika.serika4_gui, style = bold  },  --  any           character     constant:  'c',       '\n'
+        Number          =  {  fg  =  serika.serika4_gui, style = bold  },  --  a             number        constant:  5
+        Boolean         =  {  fg  =  serika.serika4_gui, style = bold   },  --  a             boolean       constant:  TRUE,      false
+        Float           =  {  fg  =  serika.serika4_gui, style = bold  },  --  a             floating      point      constant:  2.3e10
+        Statement       =  {  fg  =  serika.serika4_gui, style = bold   },  --  any           statement
+        Label           =  {  fg  =  serika.serika10_gui, style = bold   },  --  case,         default,      etc.
+        Operator        =  {  fg  =  serika.serika4_gui, style = bold   },  --  sizeof",      "+",          "*",       etc.
+        Exception       =  {  fg  =  serika.serika10_gui, style = bold   },  --  try,          catch,        throw
+        PreProc         =  {  fg  =  serika.serika10_gui, style = bold  },  --  generic       Preprocessor
+        Include         =  {  fg  =  serika.serika10_gui, style = bold   },  --  preprocessor  #include
+        Define          =  {  fg  =  serika.serika10_gui, style = bold   },  --  preprocessor  #define
+        Macro           =  {  fg  =  serika.serika10_gui, style = bold   },  --  same          as            Define
+        Typedef         =  {  fg  =  serika.serika10_gui, style = bold   },  --  A             typedef
+        PreCondit       =  {  fg  =  serika.serika10_gui, style = bold  },  --  preprocessor  #if,          #else,     #endif,    etc.
+        Special         =  {  fg  =  serika.serika4_gui   },  --  any           special       symbol
+        SpecialChar     =  {  fg  =  serika.serika13_gui  },  --  special       character     in         a          constant
+        Tag             =  {  fg  =  serika.serika4_gui   },  --  you           can           use        CTRL-]     on        this
+        Delimiter       =  {  fg  =  serika.serika4_gui   },  --  character     that          needs      attention  like      ,     or  .
+        SpecialComment  =  {  fg  =  serika.serika8_gui   },  --  special       things        inside     a          comment
+        Debug           =  {  fg  =  serika.serika11_gui  },  --  debugging     statements
+		Underlined      =  { fg = serika.serika14_gui, bg = serika.none, style = "underline" }, -- text that stands out, HTML links
+		Ignore          =  { fg = serika.serika1_gui }, -- left blank, hidden
+		Todo            =  { fg = serika.serika13_gui, bg = serika.none, style = bold_italic }, -- anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+        Conceal   =  {  fg  =  serika.none,          bg     =  serika.serika0_gui  },
+        htmlLink  =  {  fg  =  serika.serika14_gui,  style  =  "underline"         },
 		markdownH1Delimiter = { fg = serika.serika8_gui },
 		markdownH2Delimiter = { fg = serika.serika11_gui },
 		markdownH3Delimiter = { fg = serika.serika14_gui },
@@ -61,12 +62,12 @@ theme.loadSyntax = function()
 		markdownH3 = { fg = serika.serika14_gui, style = bold },
 		Error = { fg = serika.serika11_gui, bg = serika.none, style = bold_underline }, -- any erroneous construct with bold
 		Comment = { fg = serika.serika3_gui_bright, style = italic }, -- italic comments
-		Conditional = { fg = serika.serika9_gui, style = italic }, -- italic if, then, else, endif, switch, etc.
-		Function = { fg = serika.serika8_gui, style = italic }, -- italic funtion names
-		Identifier = { fg = serika.serika9_gui, style = italic }, -- any variable name
-		Keyword = { fg = serika.serika9_gui, style = italic }, -- italic for, do, while, etc.
-		Repeat = { fg = serika.serika9_gui, style = italic }, -- italic any other keyword
-		String = { fg = serika.serika14_gui, style = italic }, -- any string
+		Conditional = { fg = serika.serika10_gui, style = bold }, -- italic if, then, else, endif, switch, etc.
+		Function = { fg = serika.serika10_gui, style = bold }, -- italic funtion names
+		Identifier = { fg = serika.serika10_gui, style = bold }, -- any variable name
+		Keyword = { fg = serika.serika10_gui, style = bold }, -- italic for, do, while, etc.
+		Repeat = { fg = serika.serika10_gui, style = bold }, -- italic any other keyword
+		String = { fg = serika.serika4_gui, style = bold }, -- any string
 	}
 end
 
@@ -496,7 +497,7 @@ theme.loadPlugins = function()
 		TelescopeMatching = { link = 'Search' },
 
 		-- NvimTree
-		NvimTreeRootFolder = { fg = serika.serika15_gui },
+		NvimTreeRootFolder = { fg = serika.serika10_gui },
 		NvimTreeSymlink = { fg = serika.serika10_gui },
 		NvimTreeFolderName = { fg = serika.serika4_gui },
 		NvimTreeFolderIcon = { fg = serika.serika4_gui },
@@ -507,7 +508,7 @@ theme.loadPlugins = function()
 		NvimTreeSpecialFile = { fg = serika.serika10_gui, style = bold},
 		NvimTreeImageFile = { fg = serika.serika10_gui },
 		NvimTreeMarkdownFile = { fg = serika.serika10gui },
-		NvimTreeIndentMarker = { fg = serika.serika10_gui },
+		NvimTreeIndentMarker = { fg = serika.serika4_gui },
 		NvimTreeGitDirty = { fg = serika.serika13_gui }, -- diff mode: Changed line |diff.txt|
 		NvimTreeGitStaged = { fg = serika.serika13_gui }, -- diff mode: Changed line |diff.txt|
 		NvimTreeGitMerge = { fg = serika.serika13_gui }, -- diff mode: Changed line |diff.txt|
